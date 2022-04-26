@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Complete the HTML here -->
+  <div class="container">
+    <h1>Indiana Jones</h1>
+    <div class="row">
+      <div class="column">
+        <img src="images/raiders.jpg">
+        <h3>Raiders of the Lost Ark</h3>
+        <p>In 1936, American archaeologist Indiana Jones recovers a golden idol from a booby-trapped Peruvian temple. Rival
+        archaeologist René Belloq corners him and steals the idol; Jones escapes in a waiting seaplane. After returning to the
+        United States, Jones is briefed by two Army Intelligence agents that Nazi German forces are excavating at Tanis, Egypt,
+        and one of their telegrams mentions Jones' old mentor Abner Ravenwood. Jones deduces that the Nazis seek the Ark of the
+        Covenant, which Adolf Hitler believes will make their army invincible. The agents recruit Jones to recover the Ark
+        first.</p>
+      </div>
+      <div class="column">
+        <img src="images/temple.jpg">
+        <h3>Temple of Doom</h3>
+        <p>The second installment in the <b><i>Indiana Jones</i></b> franchise released on May 8, 1984,
+        Indiana Jones recues children from a religious cult in India. After arriving in India, Indiana Jones is asked by desperate
+        villagers to find a mystical stone and rescue their children from a Thuggee cult practicing child slavery, black magic,
+        and ritualistic human sacrifice in honor of the goddess Kali.</p>
+      </div>
+      <div class="column">
+        <img src="images/crusade.jpg">
+        <h3>The Last Crusade</h3>
+        <p>Released on May 24, 1989, <b><i>The Last Crusade</i></b> is the third installment in the <b><i>Indiana Jones</i></b> franchise.
+        The story begins with a flashback to 13-year-old Indiana Jones stealing a golden crucifix from a group of
+        grave robbers in hopes to donate it to a museum. Years later, Jones runs into the same group of robbers and discovers
+        that his father went missing while searching for the Holy Grail. </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
